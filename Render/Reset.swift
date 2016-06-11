@@ -132,8 +132,10 @@ struct Reset {
         textView.clearsOnInsertion = Reset.TextView.clearsOnInsertion
         textView.selectable = Reset.TextView.selectable
         textView.selectedRange = Reset.TextView.selectedRange
+#if os(iOS)
         textView.editable = Reset.TextView.editable
         textView.dataDetectorTypes = Reset.TextView.dataDetectorTypes
+#endif
         textView.allowsEditingTextAttributes = Reset.TextView.allowsEditingTextAttributes
         textView.scrollEnabled = Reset.TextView.scrollEnabled
         textView.delegate = nil
